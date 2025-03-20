@@ -1,0 +1,37 @@
+/* Correções de estilo para o Tarkan Free */
+
+/* Corrigir referências de imagens de fundo */
+.login[data-v-10b92f17] {
+    background-image: url('/img/bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* Melhoria no z-index para pop-ups e modais */
+.modal-content {
+    z-index: 9999 !important;
+}
+
+/* Correção para falhas de layout durante o carregamento */
+#app {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Melhorias de responsividade */
+@media (max-width: 768px) {
+    .nav-container {
+        width: 100% !important;
+    }
+    
+    .map-control-buttons {
+        transform: scale(0.85);
+        transform-origin: bottom right;
+    }
+}
+
+/* Melhorias na velocidade de transições */
+.fade-transition,
+.slide-transition {
+    transition-duration: 0.2s !important;
+}
